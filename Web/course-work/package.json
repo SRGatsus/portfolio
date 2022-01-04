@@ -1,0 +1,42 @@
+{
+  "name": "course-work",
+  "version": "1.0.0",
+  "description": "MERN course-work",
+  "private": true,
+  "main": "Index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node App.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\"",
+    "deploy": "gh-pages -d dev",
+    "predeploy": "npm run dev"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "node",
+    "js",
+    "express",
+    "db"
+  ],
+  "author": "Korotaev Roman kychin.roman@yandex.ru",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "gh-pages": "^3.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11",
+    "react-content-loader": "^5.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.6"
+  }
+}
