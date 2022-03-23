@@ -31,7 +31,7 @@ public class SqrtDecompos {
 
     /**
      * The function initializes an array of numbers with length N and an array of minimal numbers, and also calculates the length of the interval.
-     * @param N-length array
+     * @param N length array
      */
 
     public void Init(int N){
@@ -52,19 +52,21 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Checks whether an array has been created
+     * @return true-array created, false-not created
      */
     public boolean IsArray(){
         return ArrayNumbers==null?false:true;
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Returns the length of the array
+     * @return array length
      */
     public int GetLengArray(){return ArrayNumbers.length;}
 
     /**
-     * Array of minimum numbers from each interval
+     * Implements array filling. If the array is not created, it throws an error
      */
     public void Fill(){
         if(ArrayNumbers!=null){
@@ -79,7 +81,9 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Implements filling an array at a point by index. If the index is out of range, an error is displayed.
+     * @param arg the argument to be inserted into the dot
+     * @param index the point itself where the insertion will be
      */
     public void Input(int index,double arg){
         if(ArrayNumbers!=null){
@@ -95,7 +99,8 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Output of a certain value by index.
+     * @param index  index of the value in the array
      */
     public double Output(int index){
         if(ArrayNumbers!=null){
@@ -107,7 +112,9 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Finding the minimum value on the interval via SQRT decomposition
+     * @param left left border
+     * @param right right border
      */
     public double SearchMinSQRT(int left, int right){
         double min=Double.MAX_VALUE;
@@ -136,7 +143,9 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Finding the minimum value in the interval through the bubble
+     * @param left left border
+     * @param right right border
      */
     public double SearchMinStandart(int left, int right){
         double min=Double.MAX_VALUE;
@@ -151,7 +160,9 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Filling an array with random numbers
+     * @param max maximum allowed value
+     * @param min minimum allowed value
      */
     public void FillRandom(int min,int max){
         if(ArrayNumbers!=null){
@@ -165,7 +176,7 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     *Filling of the minimum array, filling only occurs if there have been changes in the array or the array has just been filled
      */
     public void FillMinArray(){
         if(ArrayNumbers!=null){
@@ -180,7 +191,7 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Displaying an array on the screen
      */
     public void PrintMain(){
         if(ArrayNumbers!=null){
@@ -194,7 +205,7 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Output of an array to the screen with the caption in which interval each number is located
      */
     public void PrintMainInterval(){
         if(ArrayNumbers!=null){
@@ -209,7 +220,7 @@ public class SqrtDecompos {
     }
 
     /**
-     * Array of minimum numbers from each interval
+     * Output of the minimum array
      */
     public void PrintMinimumArray(){
         if(ArrayNumbers!=null){
