@@ -52,6 +52,13 @@ public class SqrtDecompos {
     }
 
     /**
+     * @return an array number
+     */
+    public double[] getArrayNumbers() {
+        return ArrayNumbers;
+    }
+
+    /**
      * Checks whether an array has been created
      * @return true-array created, false-not created
      */

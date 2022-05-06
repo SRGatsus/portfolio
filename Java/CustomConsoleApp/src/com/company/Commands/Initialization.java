@@ -1,10 +1,10 @@
 package com.company.Commands;
 
 import com.company.CustomConsoleLineModule.Command;
-import com.company.InputSystem.CustomInputSystim;
-import com.company.SqrtDecompositions.SqrtDecompos;
-import static com.company.InputSystem.CustomInputSystim.CheckNumber;
 
+import static com.company.InputSystem.CustomInputSystim.CheckNumber;
+import com.company.SqrtDecompositions.SqrtDecompos;
+import com.company.InputSystem.CustomInputSystim;
 /**
  *@author Roman Korotaev
  *@since 1.0

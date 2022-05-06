@@ -2,7 +2,7 @@ package com.company.Commands;
 
 import com.company.CustomConsoleLineModule.Command;
 import com.company.SqrtDecompositions.SqrtDecompos;
-
+import com.company.InputSystem.CustomInputSystim;
 /**
  *@author Roman Korotaev
  *@since 1.0
